@@ -29,15 +29,15 @@ export class SignupComponent implements OnInit{
   }
 
   onSignIn(){
-    this.api.signIn(this.utilisateur).subscribe(
-      (response: Message) => {
+    this.api.signIn(this.utilisateur).subscribe({
+      next: (response: Message) => {
         this.response = response;
         console.log('Login successful', this.response);
         alert(response.message);
       },
-      (error: HttpErrorResponse) => {
+      error: (error: HttpErrorResponse) => {
         console.error('Login failed', error.message);
       }
-    )
+    })
   }
 }

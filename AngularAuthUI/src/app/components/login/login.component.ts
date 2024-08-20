@@ -30,15 +30,15 @@ export class LoginComponent implements OnInit {
   }
 
   onLogin() {
-    this.authService.login(this.login).subscribe(
-      (response: LoginResponse) => {
+    this.authService.login(this.login).subscribe({
+      next: (response: LoginResponse) => {
         this.response = response;
         console.log('Login successful', this.response);
         alert(response.message);
       },
-      (error: HttpErrorResponse) => {
+      error: (error: HttpErrorResponse) => {
         console.error('Login failed', error.message);
       }
-    );
+    });
   }
 }
