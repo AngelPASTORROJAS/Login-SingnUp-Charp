@@ -17,7 +17,7 @@ export class SignupComponent implements OnInit{
   isText: boolean = false;
   eyeIcon: string = "fa-eye-slash"
   utilisateur: SignIn= {} as SignIn;
-  response: Message={message:'S'};
+  response: Message={message:''};
 
   constructor(private api: AuthentificationService) {}
   ngOnInit(): void {}
