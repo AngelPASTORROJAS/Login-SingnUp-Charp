@@ -1,0 +1,28 @@
+src/
+├── app/
+│ ├── core/
+│ │ ├── guards/
+│ │ ├── interceptors/
+│ │ ├── services/
+│ ├── features/
+│ │ ├── auth/
+│ │ │ ├── components/
+│ │ ├── dashboard/
+│ │ │ ├── components/
+│ │ └── profile/
+│ │ ├── components/
+│ ├── shared/
+│ │ ├── components/
+│ │ ├── directives/
+│ │ ├── pipes/
+│ ├── layout/
+│ ├── models/
+│ ├── interfaces/
+│ ├── app.component.ts
+│ ├── app.component.html
+│ ├── app.component.scss
+│ ├── app.config.ts
+│ └── app.routes.ts
+├── assets/
+├── environments/
+└── main.ts
